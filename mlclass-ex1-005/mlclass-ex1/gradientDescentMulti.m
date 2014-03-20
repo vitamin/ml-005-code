@@ -19,6 +19,12 @@ for iter = 1:num_iters
 
 
 
+    %j = size(X*theta-y)
+    %(X*theta-y)'*X(:,iter)
+    %size_ = size(sum((X*theta-y)*X(iter,:)))
+    theta = theta-(alpha/m)*(X'*(X*theta-y));
+
+
 
 
 
